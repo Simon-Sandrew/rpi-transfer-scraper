@@ -3,7 +3,7 @@
 Spreadsheet from a run on Dec 22nd, 2024: [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1ufciRyXItZgLiQv5-lFR-pyhxhZX8vUkGVVRPe9WTIE/edit?usp=sharing)
 
 # Background
-RPI's [class transer list](https://tes.collegesource.com/publicview/TES_publicview01.aspx?rid=f080a477-bff8-46df-a5b2-25e9affdd4ed&aid=27b576bb-cd07-4e57-84d0-37475fde70ce) is not very good. This is a short script that scrapes every class in the portal.
+RPI's [class transer list](https://tes.collegesource.com/publicview/TES_publicview01.aspx?rid=f080a477-bff8-46df-a5b2-25e9affdd4ed&aid=27b576bb-cd07-4e57-84d0-37475fde70ce) is not very good. This is a short script that scrapes every class on the webpage
 
 # Running this scraped Yourself
 The current configuration is setup to run four sessions at once, which more than likely will result in getting rate limited by the captcha. You'll know this has happened when the scraping stops for around 5-10 seconds. If / when this happens, complete the following:
