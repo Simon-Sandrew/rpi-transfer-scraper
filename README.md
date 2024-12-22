@@ -1,2 +1,20 @@
-# rpi-transfer-scraper
-A Hacky scraped for scarping RPI's transfer class page
+# RPI Transfer Class Scraper
+
+Spreadsheet from a run on Dec 22nd, 2024: [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1ufciRyXItZgLiQv5-lFR-pyhxhZX8vUkGVVRPe9WTIE/edit?usp=sharing)
+
+# Background
+RPI's (class transer list)[https://tes.collegesource.com/publicview/TES_publicview01.aspx?rid=f080a477-bff8-46df-a5b2-25e9affdd4ed&aid=27b576bb-cd07-4e57-84d0-37475fde70ce] is not very good. This is a short script that scrapes every class in the portal.
+
+# Running this scraped Yourself
+The current configuration is setup to run four sessions at once, which more than likely will result in getting rate limited by the captcha. You'll know this has happened when the scraping stops for around 5-10 seconds. If / when this happens, complete the following:
+1. Refresh the page
+2. Complete the captcha
+3. Navigate back to the previous page (if you don't remember, I print out the page number, and the action that it failed on, CTRL + F "failed" in the output)
+4. Wait upwards of 90 seconds
+   
+When this happens, we pause for 90 seconds so you can complete the above. Simply wait for it to continue after you've navigated to the correct spot and you should be all set. This happens about 1-2 times if you are running 4 at once for a complete run.
+
+# How to improve this scraper
+1. Use use some multi-modal llm to solve the captcha's automatically (or however captcha's are solved nowadays)
+2. Enable proxies of some kind so you can skirt the captcha more often
+3. Run in headless mode or something
